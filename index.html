@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alan David Clemente Reyes | Desarrollador de software</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Principal">
+      <a class="logo" href="#inicio">Alan Clemente</a>
+      <button id="menu" aria-expanded="false" aria-controls="links">Menú</button>
+      <ul id="links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><button id="theme" aria-label="Cambiar tema claro u oscuro">Tema</button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero" id="inicio">
+    <div>
+      <h1>Alan David Clemente Reyes</h1>
+      <p>Desarrollador de software. Construyo aplicaciones web con código limpio, enfocadas en resolver problemas reales.</p>
+      <div class="btns">
+        <a class="btn main" href="#proyectos">Ver proyectos</a>
+        <a class="btn alt" href="#contacto">Contáctame</a>
+      </div>
+    </div>
+    <div class="photo"><img src="img/foto.jpg" alt="Retrato de Alan David Clemente Reyes con traje negro"></div>
+  </div>
+
+  <section id="sobre-mi">
+    <div class="wrap about">
+      <div>
+        <h2>Sobre mí</h2>
+        <p>Soy Alan David Clemente Reyes, desarrollador de software. Me dedico a diseñar, programar y mantener aplicaciones que sean claras, rápidas y fáciles de usar.</p>
+        <p>Busco oportunidades para seguir creciendo en equipos de desarrollo y colaborar en proyectos interesantes.</p>
+      </div>
+      <ul class="facts">
+        <li><span>Ubicación</span> Chiapas, México</li>
+        <li><span>Perfil</span> Desarrollador de software</li>
+        <li><span>Idiomas</span> Español, Inglés</li>
+        <li><span>Disponibilidad</span> Tiempo completo</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <div class="wrap">
+      <h2>Habilidades</h2>
+      <div class="skills" role="group" aria-label="Habilidades"></div>
+      <p id="skillInfo">Selecciona una habilidad para ver el detalle.</p>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <div class="wrap">
+      <h2>Proyectos</h2>
+      <div class="projects">
+        <article class="project"><h3>Proyecto uno</h3><p>Aplicación web que desarrollé de principio a fin. Describe aquí qué problema resuelve.</p><small>HTML · CSS · JavaScript</small></article>
+        <article class="project"><h3>Proyecto dos</h3><p>Agrega un resultado concreto: un número, un premio o un cliente.</p><small>Tecnologías usadas</small></article>
+        <article class="project"><h3>Proyecto tres</h3><p>Puedes enlazar a tu repositorio o a la versión en línea.</p><small>Tecnologías usadas</small></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <form id="form" novalidate>
+        <label>Nombre <input id="nombre" required autocomplete="name"></label>
+        <label>Correo <input id="correo" type="email" required autocomplete="email"></label>
+        <label>Mensaje <textarea id="mensaje" rows="4" required></textarea></label>
+        <button class="btn main" type="submit">Enviar mensaje</button>
+        <div id="msg" role="status"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Alan David Clemente Reyes. Todos los derechos reservados.</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
